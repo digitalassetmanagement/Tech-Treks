@@ -1,0 +1,139 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+}
+
+/* Container */
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+}
+
+/* Heading */
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+/* Button Section */
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.controls button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.controls button:hover {
+  background: #1d4ed8;
+}
+
+/* Product Grid */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-top: 8px;
+}
+
+/* Loading */
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  font-size: 25px;
+  color: #2563eb;
+}
+
+/* Error */
+
+.error {
+  text-align: center;
+  background: #fdecec;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.error h2 {
+  color: red;
+}
+
+.error button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Empty */
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+}
+
+/* Status */
+
+.available {
+  color: green;
+  font-weight: bold;
+}
+
+.unavailable {
+  color: red;
+  font-weight: bold;
+}
